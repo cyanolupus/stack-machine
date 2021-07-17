@@ -1,0 +1,15 @@
+jump 4
+nop
+halt
+push 0
+push 1
+add
+set 1
+get 1
+call 1
+get 1
+push 10
+sub
+jumpif 2
+get 1
+jump 5
