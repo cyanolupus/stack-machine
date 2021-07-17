@@ -149,11 +149,7 @@ void interpreter(std::vector<OpArg> instructions) {
 }
 
 int main() {
-    std::vector<OpArg> instructions1 = input2Instructions();
-    std::vector<OpArg> instructions2 = instructions1;
-    std::thread th1(interpreter,instructions1);
-    std::thread th2(interpreter,instructions2);
-    th1.join();
-    th2.join();
+    std::vector<OpArg> instructions = input2Instructions();
+    interpreter(instructions);
     return 0;
 }
